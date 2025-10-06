@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(211, 209, 209);
+}
+
+.container {
+    margin: 20px 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 32px;
+}
+
+.navigation>nav>ul>li {
+    margin-left: 20px;
+    font-size: large;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation {
+    background-color: #fff;
+}
+
+.navigation>nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "logo links links links actions";
+}
+
+.navigation .logo {
+    grid-area: logo;
+}
+
+.navigation .links {
+    grid-area: links;
+}
+
+.navigation .actions {
+    grid-area: actions;
+
+}
