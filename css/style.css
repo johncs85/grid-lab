@@ -23,6 +23,7 @@ ul {
     padding: 8px 32px;
 }
 
+/* navigation section  */
 .navigation>nav>ul>li {
     margin-left: 20px;
     font-size: large;
@@ -93,3 +94,30 @@ ul {
     border-radius: 100%;
     margin-right: 3px;
 }
+
+/* social proof section  */
+.social-proof {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+        "h1"
+        "ul";
+}
+
+.social-proof>h2 {
+    grid-area: h1;
+}
+
+.social-proof>ul {
+    grid-area: ul;
+}
+
+.social-proof>ul>li{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+    background-color: #000;
+}
+
