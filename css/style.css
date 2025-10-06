@@ -59,6 +59,13 @@ ul {
     grid-area: actions;
 
 }
+@media(max-width: 680px) {
+    .actions>.btn{
+        padding: 2px 8px;
+        font-size: small;
+    }
+    
+}
 
 
 /* Hero section  */
@@ -96,6 +103,15 @@ ul {
     border-radius: 100%;
     margin-right: 3px;
 }
+@media(max-width: 680px) {
+    .hero{
+        grid-template-columns: 1fr;
+    }
+    
+    .hero>.right-hero {
+        width: 100%;
+    }
+}
 
 /* social proof section  */
 .social-proof {
@@ -121,6 +137,12 @@ ul {
     border-radius: 100%;
     margin-right: 20px;
     background-color: #000;
+}
+
+@media(max-width: 680px) {
+    .social-proof{
+        display: block;
+    }
 }
 
 
@@ -157,4 +179,13 @@ footer>.resources {
 
 footer>.company {
     grid-area: company;
+}
+
+@media(max-width: 680px){
+    footer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "copyright copyright products"
+        "features resources company";
+    }
 }
