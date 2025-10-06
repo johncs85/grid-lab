@@ -15,6 +15,7 @@ a {
 
 ul {
     list-style: none;
+    
 }
 
 .btn {
@@ -68,14 +69,15 @@ ul {
     gap: 8rem;
     padding: 5rem;
 }
-.left-hero>div>.btn{
+
+.left-hero>div>.btn {
     display: inline-block;
     margin-top: 20px;
     background-color: #000;
     color: #fff;
 }
 
-.hero>.right-hero{
+.hero>.right-hero {
     border: 1px solid black;
     background-color: #fff;
     height: 100%;
@@ -100,7 +102,7 @@ ul {
     background-color: #fff;
     display: grid;
     grid-template-columns: auto;
-    grid-template-areas: 
+    grid-template-areas:
         "h1"
         "ul";
 }
@@ -113,7 +115,7 @@ ul {
     grid-area: ul;
 }
 
-.social-proof>ul>li{
+.social-proof>ul>li {
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -121,3 +123,38 @@ ul {
     background-color: #000;
 }
 
+
+/* Footer section  */
+footer {
+    background-color: rgb(216, 215, 215);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "copyright copyright products features resources company";
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer>.copyright {
+    grid-area: copyright;
+    margin-left: 2rem;
+}
+
+footer>.products {
+    grid-area: products;
+}
+
+footer>.features {
+    grid-area: features;
+}
+
+footer>.resources {
+    grid-area: resources;
+}
+
+footer>.company {
+    grid-area: company;
+}
